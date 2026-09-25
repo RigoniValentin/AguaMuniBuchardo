@@ -1,0 +1,69 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.heading h1 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-2);
+}
+
+.heading p {
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.kpis {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.kpiSpinner {
+  padding: var(--space-2) 0;
+}
+
+.kpiValue {
+  display: inline-block;
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  margin-right: var(--space-3);
+  vertical-align: middle;
+}
+
+.kpiMuted {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.kpiLink {
+  display: inline-block;
+  margin-top: var(--space-3);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.kpiLink:hover {
+  text-decoration: underline;
+}
+
+.modules {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.moduleLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.moduleLink:hover {
+  text-decoration: underline;
+}

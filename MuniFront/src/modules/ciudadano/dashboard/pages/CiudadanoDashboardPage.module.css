@@ -1,0 +1,66 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-6) 0;
+}
+
+.dl {
+  margin: var(--space-3) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.dl > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.dl dt {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-muted, #475569);
+}
+
+.dl dd {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.tone-success {
+  background: #DCFCE7;
+  color: #15803D;
+}
+
+.tone-info {
+  background: #E0F2FE;
+  color: #0369A1;
+}
+
+.tone-warning {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
+.tone-primary {
+  background: #DBE6FF;
+  color: #1D3FC0;
+}

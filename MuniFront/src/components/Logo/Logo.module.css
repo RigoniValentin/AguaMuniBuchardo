@@ -1,0 +1,124 @@
+.wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.marks {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.mark {
+  display: block;
+  height: auto;
+  object-fit: contain;
+}
+
+.principal {
+  filter: drop-shadow(0 6px 14px rgba(64, 63, 150, 0.32));
+}
+
+.water {
+  filter: drop-shadow(0 6px 14px rgba(108, 92, 231, 0.38));
+}
+
+/* ============== Sizes (width-based, preserves aspect ratio) ============== */
+
+.sm .mark.principal {
+  width: 110px;
+}
+
+.md .mark.principal {
+  width: 150px;
+}
+
+.lg .mark.principal {
+  width: 200px;
+}
+
+.sm .mark.water {
+  width: 70px;
+}
+
+.md .mark.water {
+  width: 100px;
+}
+
+.lg .mark.water {
+  width: 140px;
+}
+
+/* Compact for tight spaces (sidebar/headers with text) */
+.compact .marks {
+  gap: 8px;
+}
+
+.compact .mark.principal {
+  width: 88px;
+}
+
+.compact .mark.water {
+  width: 56px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  min-width: 0;
+}
+
+.title {
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.inverted .title {
+  color: #fff;
+}
+
+.inverted .subtitle {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.inverted {
+  color: #fff;
+}
+
+.sm .title {
+  font-size: var(--font-size-md);
+}
+
+.md .title {
+  font-size: var(--font-size-lg);
+}
+
+.lg .title {
+  font-size: var(--font-size-xl);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

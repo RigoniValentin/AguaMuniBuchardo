@@ -1,0 +1,151 @@
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid var(--color-border, #e2e8f0);
+  padding: 12px 0;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+.itemLink {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-decoration: none;
+  color: inherit;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.itemLink:hover {
+  background: rgba(0, 0, 0, 0.03);
+  text-decoration: underline;
+}
+
+.headRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.total {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-text, #0f172a);
+}
+
+.metaRow {
+  font-size: 0.9rem;
+  color: var(--color-text-muted, #475569);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.subRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--color-text-muted, #475569);
+}
+
+.dot {
+  color: var(--color-text-muted, #94a3b8);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.cancelBtn {
+  background: transparent;
+  border: 1px solid var(--color-danger, #EF4444);
+  color: var(--color-danger, #EF4444);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.cancelBtn:hover {
+  background: rgba(239, 68, 68, 0.06);
+}
+
+.claimBtn {
+  background: var(--color-primary, #2563eb);
+  border: 1px solid var(--color-primary, #2563eb);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.claimBtn:hover:not(:disabled) {
+  filter: brightness(1.05);
+}
+
+.claimBtn:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.summary {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: var(--color-text-muted, #475569);
+}
+
+.pagination {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pageInfo {
+  font-size: 0.85rem;
+  color: var(--color-text-muted, #475569);
+}
+
+.pageBtn {
+  background: transparent;
+  border: 1px solid var(--color-border, #e2e8f0);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.pageBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.fetchingHint {
+  font-size: 0.8rem;
+  color: var(--color-text-muted, #94a3b8);
+  margin-top: 8px;
+}

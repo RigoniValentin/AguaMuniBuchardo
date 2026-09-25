@@ -1,0 +1,59 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.linked {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.statusRow {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.email {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.email strong {
+  font-weight: 600;
+}
+
+.confirm {
+  padding: var(--space-3);
+  border-radius: 8px;
+  background: var(--color-bg-soft, #F8FAFC);
+  border: 1px solid var(--color-border);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.muted {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-muted, #475569);
+}
+
+.errorMsg {
+  margin: var(--space-2) 0 0;
+  font-size: 0.9rem;
+  color: #DC2626;
+}
+
+.successMsg {
+  margin: var(--space-2) 0 0;
+  font-size: 0.9rem;
+  color: #15803D;
+}

@@ -1,0 +1,105 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heading h1 {
+  margin: 0 0 4px;
+}
+
+.heading p {
+  margin: 0;
+  color: var(--color-text-muted, #475569);
+  font-size: 0.9rem;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  .summary {
+    grid-template-columns: 1fr;
+  }
+}
+
+.error {
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #b91c1c;
+  font-size: 0.9rem;
+}
+
+.bigNumber {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.cta {
+  display: flex;
+  justify-content: stretch;
+}
+
+.cta > * {
+  flex: 1;
+}
+
+.emptyHint {
+  font-size: 0.85rem;
+  color: var(--color-text-muted, #475569);
+  text-align: center;
+}
+
+.todayBanner {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #e0f2fe, #ecfeff);
+  border: 1px solid #bae6fd;
+  color: #0c4a6e;
+}
+
+.todayBanner[data-tone="off"] {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  border-color: #fcd34d;
+  color: #78350f;
+}
+
+.todayHeadline {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.todayZones {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.todayHint {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.zoneBadge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #0c4a6e;
+  color: #f0f9ff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-right: 6px;
+}
+
+.zoneBadge[data-empty="true"] {
+  background: #94a3b8;
+  color: #f8fafc;
+}

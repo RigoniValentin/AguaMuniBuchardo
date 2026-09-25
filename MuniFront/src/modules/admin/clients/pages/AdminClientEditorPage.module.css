@@ -1,0 +1,24 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.heading h1 {
+  margin: var(--space-1) 0 0 0;
+}
+
+.backLink {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.backLink:hover {
+  color: var(--color-primary);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-10);
+}

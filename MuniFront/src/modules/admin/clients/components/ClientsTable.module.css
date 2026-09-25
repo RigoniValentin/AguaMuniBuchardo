@@ -1,0 +1,121 @@
+.tableWrap {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-sm);
+}
+
+.table thead th {
+  text-align: left;
+  font-weight: 700;
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-alt);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table tbody td {
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.row:last-child td {
+  border-bottom: none;
+}
+
+.nameLink {
+  color: var(--color-text);
+}
+
+.nameLink:hover {
+  color: var(--color-primary);
+}
+
+.muted {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-xs);
+  margin-top: 2px;
+}
+
+.docType {
+  display: inline-block;
+  background: var(--color-surface-alt);
+  color: var(--color-text-muted);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: var(--font-size-xs);
+  margin-right: var(--space-2);
+}
+
+.docNumber {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: var(--font-size-sm);
+}
+
+.actions {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.viewLink {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+}
+
+.viewLink:hover {
+  background: var(--color-surface-alt);
+  border-color: var(--color-border-strong);
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .table thead {
+    display: none;
+  }
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+  .row {
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-3);
+  }
+  .table tbody td {
+    padding: var(--space-2) 0;
+    border: none;
+  }
+  .table tbody td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    margin-right: var(--space-2);
+  }
+  .actions {
+    text-align: left;
+  }
+}

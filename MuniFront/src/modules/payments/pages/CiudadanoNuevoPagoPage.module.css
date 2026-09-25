@@ -1,0 +1,105 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.heading h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.heading p {
+  margin: var(--space-1) 0 0;
+  color: var(--color-muted, #475569);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.select:focus-visible {
+  outline: 2px solid var(--color-focus, #2563EB);
+  outline-offset: 2px;
+}
+
+.fileRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.fileInput {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px dashed var(--color-border);
+  background: var(--color-bg-soft, #F8FAFC);
+}
+
+.fileHint {
+  margin: var(--space-1) 0 0;
+  font-size: 0.8rem;
+  color: var(--color-muted, #475569);
+}
+
+.filePreview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+  padding: var(--space-3);
+  border-radius: 8px;
+  background: var(--color-bg-soft, #F8FAFC);
+  margin-top: var(--space-2);
+}
+
+.fileInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  flex: 1;
+  min-width: 0;
+}
+
+.fileMeta {
+  font-size: 0.8rem;
+  color: var(--color-muted, #475569);
+  word-break: break-all;
+}
+
+.previewImage {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}

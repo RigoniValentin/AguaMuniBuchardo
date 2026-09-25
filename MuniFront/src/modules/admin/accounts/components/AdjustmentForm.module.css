@@ -1,0 +1,84 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.fieldset {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+}
+
+.legend {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  padding: 0 6px;
+}
+
+.kindRow {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.kindOption {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  flex: 1 1 200px;
+  background: var(--color-surface);
+}
+
+.kindOption:hover {
+  border-color: var(--color-primary);
+}
+
+.kindLabel {
+  font-weight: 600;
+}
+
+.kindHelp {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  background: var(--color-surface-alt);
+  border-radius: var(--radius-sm);
+}
+
+.previewLabel {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.previewValue {
+  font-weight: 600;
+}
+
+.muted {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+.error {
+  color: #B91C1C;
+  font-size: var(--font-size-sm);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}

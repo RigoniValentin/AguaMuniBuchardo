@@ -1,0 +1,84 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.nameLink {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+.nameLink:hover {
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.docType {
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.docNumber {
+  font-family: var(--font-mono);
+}
+
+.balance {
+  font-weight: 700;
+  font-size: var(--font-size-base);
+}
+
+.balance-DEBT {
+  color: #B91C1C;
+}
+
+.balance-CREDIT {
+  color: #15803D;
+}
+
+.balance-SETTLED {
+  color: var(--color-text-muted);
+}
+
+.muted {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-xs);
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.viewLink {
+  font-size: var(--font-size-sm);
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  font-weight: 600;
+}

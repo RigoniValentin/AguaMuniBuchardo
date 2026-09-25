@@ -1,0 +1,131 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.backLink {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.backLink:hover {
+  color: var(--color-primary);
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-top: var(--space-1);
+}
+
+.titleRow h1 {
+  margin: 0;
+}
+
+.docLine {
+  margin: var(--space-2) 0 0 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-4);
+}
+
+.dl {
+  margin: var(--space-4) 0 0 0;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.dl > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.dl dt {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+}
+
+.dl dd {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+}
+
+.docNumber {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-weight: 600;
+}
+
+.notes {
+  margin: var(--space-3) 0;
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  white-space: pre-wrap;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-10);
+}
+
+.accountRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.balanceValue {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+}
+
+.balance-DEBT {
+  color: #B91C1C;
+}
+
+.balance-CREDIT {
+  color: #15803D;
+}
+
+.balance-SETTLED {
+  color: var(--color-text-muted);
+}
+
+.accountLink {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.accountLink:hover {
+  text-decoration: underline;
+}
+
+.muted {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}

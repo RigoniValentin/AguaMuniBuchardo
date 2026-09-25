@@ -1,0 +1,81 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.heading h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: var(--space-2);
+  color: var(--color-muted, #475569);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.backLink:hover {
+  text-decoration: none;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.docLine {
+  margin: var(--space-1) 0 0;
+  color: var(--color-muted, #475569);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-6) 0;
+}
+
+.dl {
+  margin: var(--space-3) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.dl > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.dl dt {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-muted, #475569);
+}
+
+.dl dd {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.receiptImage {
+  max-width: 100%;
+  max-height: 480px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  margin-top: var(--space-3);
+}
+
+.fileMeta {
+  margin: var(--space-2) 0 0;
+  font-size: 0.9rem;
+  color: var(--color-muted, #475569);
+}

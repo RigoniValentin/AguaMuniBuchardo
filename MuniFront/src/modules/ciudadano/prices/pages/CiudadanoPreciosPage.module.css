@@ -1,0 +1,133 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.heading h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.heading p {
+  margin: var(--space-1) 0 0;
+  color: var(--color-muted, #475569);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-6) 0;
+}
+
+.muted {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-muted, #475569);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.item {
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-surface);
+}
+
+.headRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.name {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.description {
+  margin: var(--space-1) 0 0;
+  font-size: 0.9rem;
+  color: var(--color-muted, #475569);
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.tone-primary {
+  background: #DBE6FF;
+  color: #1D3FC0;
+}
+
+.tone-info {
+  background: #E0F2FE;
+  color: #0369A1;
+}
+
+.tone-success {
+  background: #DCFCE7;
+  color: #15803D;
+}
+
+.tone-warning {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
+.tone-neutral {
+  background: var(--color-bg-soft, #F1F5F9);
+  color: var(--color-muted, #475569);
+}
+
+.prices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.priceCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-2);
+  border-radius: 8px;
+  background: var(--color-bg-soft, #F8FAFC);
+}
+
+.priceLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-muted, #475569);
+}
+
+.basePrice {
+  text-decoration: line-through;
+  color: var(--color-muted, #475569);
+  font-size: 1rem;
+}
+
+.finalPrice {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #22C55E;
+}

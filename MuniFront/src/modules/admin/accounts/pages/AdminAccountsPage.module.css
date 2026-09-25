@@ -1,0 +1,12 @@
+.loading {
+  padding: var(--space-6) 0;
+  display: flex;
+  justify-content: center;
+}
+
+.fetchingHint {
+  text-align: right;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  padding: var(--space-1) 0;
+}

@@ -1,0 +1,33 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.heading h1 {
+  margin: 0;
+}
+
+.backLink {
+  color: var(--color-primary, #1E40E6);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 0;
+  color: var(--color-text-secondary, #475569);
+}
